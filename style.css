@@ -92,6 +92,24 @@ margin-top:20px;
 opacity:0.9;
 
 }
+
+#submitBtn{
+
+background:#8BC53F;
+
+color:white;
+
+border:none;
+
+padding:15px 30px;
+
+font-size:18px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+}
 }
 
 #total{
