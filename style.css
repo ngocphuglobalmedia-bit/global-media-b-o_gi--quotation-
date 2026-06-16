@@ -66,6 +66,32 @@ label{
 
 .total-card{
     text-align:center;
+
+    .zalo-btn{
+
+display:inline-block;
+
+background:#8BC53F;
+
+color:white;
+
+padding:15px 30px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-top:20px;
+
+}
+
+.zalo-btn:hover{
+
+opacity:0.9;
+
+}
 }
 
 #total{
