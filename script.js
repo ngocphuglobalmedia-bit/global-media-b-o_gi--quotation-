@@ -55,3 +55,50 @@ calculateTotal
 );
 
 calculateTotal();
+
+document
+.getElementById("submitBtn")
+.addEventListener("click", sendLead);
+
+function sendLead(){
+
+const data = {
+
+name:
+document.getElementById("name").value,
+
+company:
+document.getElementById("company").value,
+
+phone:
+document.getElementById("phone").value,
+
+email:
+document.getElementById("email").value,
+
+total:
+document.getElementById("total").innerText
+
+};
+
+fetch(
+"PASTE_URL_GOOGLE_SCRIPT_HERE",
+{
+
+method:"POST",
+
+body:JSON.stringify(data)
+
+}
+
+)
+
+.then(()=>{
+
+alert(
+"Yêu cầu tư vấn đã được gửi thành công!"
+);
+
+});
+
+}
