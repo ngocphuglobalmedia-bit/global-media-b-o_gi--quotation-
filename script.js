@@ -27,8 +27,26 @@ document.getElementById("recap").value
 
 total += recap * 2000000;
 
+let subtotal = total;
+
+let vat = 0;
+
+if(document.getElementById("vat").checked){
+
+    vat = subtotal * 0.08;
+
+}
+
+let grandTotal = subtotal + vat;
+
+document.getElementById("subtotal").innerText =
+subtotal.toLocaleString('vi-VN') + " VNĐ";
+
+document.getElementById("vatAmount").innerText =
+vat.toLocaleString('vi-VN') + " VNĐ";
+
 document.getElementById("total").innerText =
-total.toLocaleString('vi-VN') + " VNĐ";
+grandTotal.toLocaleString('vi-VN') + " VNĐ";
 }
 
 document.addEventListener(
