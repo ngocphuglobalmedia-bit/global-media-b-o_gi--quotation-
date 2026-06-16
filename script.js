@@ -82,7 +82,7 @@ document.getElementById("total").innerText
 };
 
 fetch(
-"https://script.google.com/macros/s/AKfycbwg3KL-U2U6KHZpCuDSYn5zQTGS0uJhPjsk6A-iwie84TqALGDsN6x--fT_G_0RT2-d/exec",
+"https://script.google.com/macros/s/AKfycbwHaRNDUez5vEICqYP5MxFOtqwNyfNM6qBL5zQj8a6XQyY1io-hMN5qRIKeD3nnrK9e/exec",
 {
 
 method:"POST",
