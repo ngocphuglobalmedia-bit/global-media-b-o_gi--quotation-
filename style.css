@@ -32,3 +32,43 @@ body{
 .subtitle{
     color:#666;
 }
+
+.card{
+    background:white;
+    margin-top:20px;
+    padding:20px;
+    border-radius:12px;
+}
+
+.card h2{
+    color:#8BC53F;
+}
+
+input[type=text],
+input[type=email],
+input[type=number]{
+
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:10px;
+
+    border:1px solid #ddd;
+    border-radius:8px;
+
+    box-sizing:border-box;
+}
+
+label{
+    display:block;
+    margin-bottom:10px;
+}
+
+.total-card{
+    text-align:center;
+}
+
+#total{
+    color:#8BC53F;
+    font-size:40px;
+}
