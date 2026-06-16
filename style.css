@@ -116,3 +116,23 @@ cursor:pointer;
     color:#8BC53F;
     font-size:40px;
 }
+
+#pdfBtn{
+
+background:#4F4F4F;
+
+color:white;
+
+border:none;
+
+padding:15px 30px;
+
+font-size:18px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+margin-bottom:20px;
+
+}
