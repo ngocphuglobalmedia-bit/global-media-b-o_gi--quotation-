@@ -102,3 +102,126 @@ alert(
 });
 
 }
+
+document
+.getElementById("pdfBtn")
+.addEventListener("click", generatePDF);
+
+function generatePDF(){
+
+const { jsPDF } = window.jspdf;
+
+const doc = new jsPDF();
+
+const name =
+document.getElementById("name").value || "";
+
+const company =
+document.getElementById("company").value || "";
+
+const phone =
+document.getElementById("phone").value || "";
+
+const email =
+document.getElementById("email").value || "";
+
+const subtotal =
+document.getElementById("subtotal").innerText;
+
+const vat =
+document.getElementById("vatAmount").innerText;
+
+const total =
+document.getElementById("total").innerText;
+
+doc.setFontSize(18);
+
+doc.text(
+"GLOBAL MEDIA & EVENTS",
+20,
+20
+);
+
+doc.setFontSize(14);
+
+doc.text(
+"BAO GIA MEDIA SU KIEN",
+20,
+35
+);
+
+doc.setFontSize(11);
+
+doc.text(
+"Khach hang: " + name,
+20,
+55
+);
+
+doc.text(
+"Cong ty: " + company,
+20,
+65
+);
+
+doc.text(
+"So dien thoai: " + phone,
+20,
+75
+);
+
+doc.text(
+"Email: " + email,
+20,
+85
+);
+
+doc.line(
+20,
+95,
+190,
+95
+);
+
+doc.text(
+"Tam tinh: " + subtotal,
+20,
+110
+);
+
+doc.text(
+"VAT 8%: " + vat,
+20,
+120
+);
+
+doc.text(
+"TONG CONG: " + total,
+20,
+135
+);
+
+doc.line(
+20,
+145,
+190,
+145
+);
+
+doc.text(
+"Hotline: 0334 412 884",
+20,
+160
+);
+
+doc.text(
+"Email: ngocphu.globalmedia@gmail.com",
+20,
+170
+);
+
+doc.save(
+"BaoGia-GlobalMedia.pdf"
+);
+
+}
